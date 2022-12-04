@@ -478,6 +478,7 @@ padding-bottom: 60px;
 display: flex;
 gap:70px;
 align-items: baseline;
+justify-content: space-between;
 }
 .footer-logo{
 margin-bottom: 20px;
@@ -574,6 +575,10 @@ transition-timing-function: var(--tran-tim-fun);
 background-color: var(--color-change);
 }
 
+.footer-send{
+margin-left: auto;
+}
+
 .footer-flex{
 display: flex;
 align-items: center;
@@ -583,7 +588,10 @@ justify-content: center;
 width: 358px;
 height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
 background-color: var(--color-bckg);
+padding-left: 16px;
+color: #FFFFFF;
 }
 .footer-post::placeholder{
 line-height: 1.25;
@@ -623,6 +631,7 @@ transform: translate(-50%, -50%) scale(1) rotate(0);
 transition: transform 300ms linear;
 top: 50%;
 left: 50%;
+padding: 40px;
 }
 
 .backdrop.is-hidden .modal{
@@ -636,7 +645,6 @@ color:var(--color-link);
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 40px;
 margin-bottom: 12px;
 }
 
@@ -663,7 +671,7 @@ transition-timing-function: var(--tran-tim-fun);
 fill: var(--color-change);
 }
 .modal-button:focus {
-    fill: var(--color-change);
+fill: var(--color-change);
 }
 
 .modal-list{
@@ -671,10 +679,8 @@ display: block;
 }
 
 .modal-item{
-
-width: 448px;
 margin: 0 auto;
-margin-top: 28px;
+margin-top: 10px;
 }
 
 .modal-item:nth-child(4n+1){
@@ -743,7 +749,7 @@ letter-spacing: 0.01em;
 }
 
 .privacy{
-margin-top: 28px;
+margin-top: 20px;
 display: block;
 justify-content: center;
 text-align: center;
@@ -760,7 +766,7 @@ justify-content: center;
 .check-text span{
 width: 16px;
 height: 15px;
-border: 1px solid #212121;
+border: 2px solid #212121;
 border-radius: 2px;
 margin-right: 7px;
 
@@ -780,17 +786,19 @@ background-color: var(--color-change);
 fill: var(--color-white);
 }
 
-
-
-.confirmation{
-font-size: 14px;
-line-height: 1.714;
-margin-bottom: 30px;
-margin-top: 20px;
-display: flex;
-align-items: center;
-justify-content: center;
+.check-text:hover,
+.check-text:focus{
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
+
+.check-text:hover >.icon-check {
+border-color: #2196F3;
+}
+.check-text:focus > .icon-check{
+border-color: #2196F3;
+}
+
 
 .mod-link{
 font-size: 14px;
@@ -816,7 +824,6 @@ pointer-events: none;
 
 .send-button{
 margin-top: 30px;
-margin-bottom: 40px;
 }
 
 /* ----------------MODAL_WINDOW-------------------- */
