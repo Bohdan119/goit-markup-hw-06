@@ -779,6 +779,10 @@ transition-duration: var(--tran-dur);
 transition-timing-function: var(--tran-tim-fun);
 }
 
+.modal-check:focus+.check-text span {
+border-color: var(--color-change);
+}
+
 .modal-check:checked + .check-text span{
 border: none;
 background-color: var(--color-change);
